@@ -1,0 +1,105 @@
+@import "src/fonts/fonts";
+
+%aside__drawer {
+  width: 230px;
+  flex-shrink: 0;
+}
+
+.menuItemIcon {
+  width: 30px;
+}
+
+.barItem {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+  position: absolute;
+  top: 20px;
+  right: 130px;
+  &__image {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+}
+.adminContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  &__aside {
+    &__drawer {
+      @extend %aside__drawer;
+      height: 100%;
+      &__logo{
+        margin-left: 10px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          width: 60px;
+        }
+        &__firstTitle {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 19px;
+          line-height: 23px;
+          color: #9191AF;
+        }
+        &__secondTitle {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 19px;
+          line-height: 23px;
+
+          color: #0FB2AB;
+        }
+      }
+
+      &__list {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin-top: 100px!important;
+        outline: none;
+        &__item {
+          margin: 10px 0 0 10px!important;
+          border-radius: 10px 0 0 8px!important;
+          padding: 12px 0 12px 20px!important;
+          &__text {
+            font-family: Roboto, sans-serif;
+            position: relative;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            color: #565682;
+            margin-left: 12px;
+          }
+          &:last-child {
+            margin: auto 0 25px 10px !important;
+          }
+        }
+      }
+    }
+  }
+}
+.activeLink {
+  color: #0FB2AB;
+}
+.dev__tag {
+  background: linear-gradient(135deg, #F38282 -580.87%, #E35F4B -480.87%);
+  border-radius: 8px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 0 12px;
+  position: absolute;
+  top: -50%;
+  left: 100%;
+}
