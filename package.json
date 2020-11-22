@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "yarn update-config && react-app-rewired start",
-    "build": "yarn update-config && react-app-rewired build",
-    "compile": "yarn update-config && tsc -p ./tsconfig.json --noEmit",
+    "start": "npm run update-config && react-app-rewired start",
+    "build": "npm run update-config && react-app-rewired build",
+    "compile": "npm run update-config && tsc -p ./tsconfig.json --noEmit",
     "lint": "eslint './**/*.{ts,tsx}'",
     "build:production": "env-cmd -f .env env-cmd -f .env.production yarn build",
     "build:staging": "env-cmd -f .env env-cmd -f .env.staging yarn build",
@@ -14,7 +14,7 @@
     "docker:stop": "docker-compose down",
     "docker:push": "sh scripts/push-docker.sh",
     "graphql-generate": "graphql-codegen",
-    "update-config": "ts-node --project scripts/tsconfig.json scripts/update-config.ts",
+    "update-config": "react-app-rewired build",
     "update-localization": "node scripts/update-localization.js",
     "deploy": "yarn build && firebase deploy"
   },
