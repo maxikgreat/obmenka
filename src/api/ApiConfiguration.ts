@@ -3,7 +3,6 @@ import {ConfigService} from 'services';
 
 export const createConfiguration = (): ApiConfiguration => ({
   host: 'https://obmenkapi.herokuapp.com/',
-  port: ConfigService.getNumberOptional('REACT_APP_API_PORT'),
   securePort: ConfigService.getNumberOptional('REACT_APP_API_SECURE_PORT'),
   globalPrefix: ConfigService.getOptional('REACT_APP_API_GLOBAL_PREFIX'),
   graphql: {
