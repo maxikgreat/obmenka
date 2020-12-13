@@ -8,18 +8,9 @@ import Layout from 'layouts';
 import Rate from './orders/Rate';
 import RateEdit from './orders/details/RateEdit';
 import CrossRate from './clients/CrossRate';
-import ClientDetails from './clients/details/ClientDetails';
-import Couriers from './couriers/Couriers';
-import CourierDetails from 'routes/couriers/details/CourierDetails';
-import Restaurants from './restaurants/Restaurants';
-import RestaurantDetails from './restaurants/details/RestaurantDetails';
 import {useAuthActions} from 'state/hooks/UseActions';
 import Settings from 'routes/settings/Settings';
-import Payments from './payments/Payments';
-import Dishes from 'routes/dishes/Dishes';
 import Sets from 'routes/sets/Contacts';
-import Statuses from 'routes/statuses/Statuses';
-import WeekMenu from './weekMenu/WeekMenu';
 
 const Logout = () => {
   const actions = useAuthActions();
@@ -80,49 +71,6 @@ const Routes: React.FC = () => {
             component={RateEdit}
             layout={Layout.AdminLayout}
           />
-          <AppRoute
-            exact
-            path="/statuses"
-            component={Statuses}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/statuses/create"
-            component={Statuses}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/statuses/:id"
-            component={Statuses}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/weekMenu"
-            component={WeekMenu}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/weekMenu/cuisine/:id"
-            component={WeekMenu}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute exact path="/dishes" component={Dishes} layout={Layout.AdminLayout} />
-          <AppRoute
-            exact
-            path="/dishes/create"
-            component={Dishes}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/dishes/:id"
-            component={Dishes}
-            layout={Layout.AdminLayout}
-          />
           <AppRoute exact path="/sets" component={Sets} layout={Layout.AdminLayout} />
           <AppRoute
             exact
@@ -139,86 +87,8 @@ const Routes: React.FC = () => {
           />
           <AppRoute
             exact
-            path="/customers/:clientId"
-            component={ClientDetails}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/customers/:clientId/editProfile"
-            component={ClientDetails}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/couriers"
-            component={Couriers}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/couriers/:courierId"
-            component={CourierDetails}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/couriers/:courierId/editProfile"
-            component={CourierDetails}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/couriers/:courierId/changingHistory"
-            component={CourierDetails}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/couriers/:courierId/ordersHistory"
-            component={CourierDetails}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/payments/:userType"
-            component={Payments}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
             path="/settings"
             component={Settings}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/restaurants"
-            component={Restaurants}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/restaurants/create"
-            component={RestaurantDetails}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/restaurants/:restaurantId"
-            component={RestaurantDetails}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/payments/:paymentId"
-            component={RestaurantDetails}
-            layout={Layout.AdminLayout}
-          />
-          <AppRoute
-            exact
-            path="/payments/:paymentId/editData"
-            component={RestaurantDetails}
             layout={Layout.AdminLayout}
           />
           <AppRoute

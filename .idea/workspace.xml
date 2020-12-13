@@ -11,7 +11,184 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7956ad47-160e-4ae2-8912-30a5ecb1299e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../obmenka-back/src/api/entities/RateByIdRequest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../obmenka-back/src/api/entities/UpdateRateRequest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../obmenka-back/src/api/rate/RateController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../obmenka-back/src/managers/rate/RateModule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/docker-compose.db-only.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/docker-compose.db-only.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/heroku.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/heroku.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/api/ApiModule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/api/ApiModule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/api/HealthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/api/HealthController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/api/auth/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/api/auth/AuthController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/api/entities/ChangePasswordRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/api/entities/ChangePasswordRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/api/entities/LoginRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/api/entities/LoginRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/api/entities/Mappers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/api/entities/Mappers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/api/entities/RefreshTokenRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/api/entities/RefreshTokenRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/app/App.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/app/App.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/app/AppModule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/app/AppModule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/app/AppUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/app/AppUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/app/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/app/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/enhancers/EnhancersModule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/enhancers/EnhancersModule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/enhancers/decorators/HttpRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/enhancers/decorators/HttpRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/enhancers/decorators/Ignore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/enhancers/decorators/Ignore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/enhancers/decorators/Roles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/enhancers/decorators/Roles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/enhancers/entities/Request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/enhancers/entities/Request.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/enhancers/interceptors/AuthInterceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/enhancers/interceptors/AuthInterceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/enhancers/utils/DecoratorUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/enhancers/utils/DecoratorUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/managers/ManagerModule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/managers/ManagerModule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/managers/auth/AuthModule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/managers/auth/AuthModule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/managers/auth/jwt/JwtModule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/managers/auth/jwt/JwtModule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/router/IRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/router/IRouter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/router/Router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/router/Router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/router/RouterModule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/router/RouterModule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/services/ServicesModule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/services/ServicesModule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/services/config/ConfigModule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/services/config/ConfigModule.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obmenka-back/src/utils/FileSystemUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../obmenka-back/src/utils/FileSystemUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/77c064c9-16ef-4ea3-a66a-5a34c0dd10f8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/77c064c9-16ef-4ea3-a66a-5a34c0dd10f8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/77c064c9-16ef-4ea3-a66a-5a34c0dd10f8/storage_v2/_src_/database/exchange.I46Zdg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/77c064c9-16ef-4ea3-a66a-5a34c0dd10f8/storage_v2/_src_/database/exchange.I46Zdg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/exchange-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/exchange-website.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/ApiConfiguration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/ApiConfiguration.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/ISpoonAndForkApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/ISpoonAndForkApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/SpoonAndForkApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/SpoonAndForkApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/entities/UpdateFirebaseTokenRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/entities/UpdateFirebaseTokenRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/rest/RestApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/rest/RestApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/AppInitializer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/AppInitializer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/clients/details/ClientDetails.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/clients/details/ClientDetails.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/clients/details/assets/editProfile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/couriers/Couriers.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/couriers/Couriers.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/couriers/details/CourierDetails.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/couriers/details/CourierDetails.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/couriers/details/assets/approvedStatusIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/couriers/details/assets/editProfile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/couriers/details/assets/newStatusIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/couriers/details/assets/passport.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/couriers/details/assets/rejectedStatusIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/couriers/details/assets/verificationRequestedStatusIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/dishes/Dishes.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/dishes/Dishes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/payments/Payments.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/payments/Payments.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/restaurants/Restaurants.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/restaurants/Restaurants.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/restaurants/details/RestaurantDetails.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/restaurants/details/RestaurantDetails.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/restaurants/details/assets/editProfile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/settings/Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/settings/Settings.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/statuses/Statuses.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/statuses/Statuses.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/weekMenu/WeekMenu.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/weekMenu/WeekMenu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/config/ConfigService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/config/ConfigService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/config/ConfigUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/config/ConfigUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/core/IInitializeService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/core/IInitializeService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/auth/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/ducks/auth/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/changePassword/saga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/ducks/changePassword/saga.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/client/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/client/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/client/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/client/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/client/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/clientDetails/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/clientDetails/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/clientDetails/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/clientDetails/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/clientDetails/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/courier/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/courier/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/courier/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/courier/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/courier/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/courierDetails/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/courierDetails/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/courierDetails/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/courierDetails/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/courierDetails/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/cuisine/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/cuisine/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/cuisine/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/cuisine/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/cuisine/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/cuisineDetails/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/cuisineDetails/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/cuisineDetails/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/cuisineDetails/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/cuisineDetails/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/dish/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/dish/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/dish/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/dish/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/dish/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/dishDetails/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/dishDetails/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/dishDetails/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/dishDetails/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/dishDetails/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/imagePicker/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/imagePicker/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/imagePicker/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/imagePicker/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/ducks/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/order/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/order/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/order/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/order/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/order/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/orderDetails/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/orderDetails/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/orderDetails/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/orderDetails/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/orderDetails/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/pushNotification/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/pushNotification/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/pushNotification/model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/pushNotification/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/pushNotification/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/restaurant/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/restaurant/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/restaurant/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/restaurant/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/restaurant/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/restaurantDetails/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/restaurantDetails/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/restaurantDetails/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/restaurantDetails/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/restaurantDetails/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/session/saga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/ducks/session/saga.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/set/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/set/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/set/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/set/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/set/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/setDetails/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/setDetails/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/setDetails/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/setDetails/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/setDetails/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/status/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/status/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/status/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/status/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/status/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/statusDetails/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/statusDetails/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/statusDetails/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/statusDetails/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/ducks/statusDetails/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/entities/State.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/entities/State.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/hooks/UseActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/hooks/UseActions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +226,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../obmenka-back" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../obmenka-back/src/managers/rate" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,23 +235,23 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
-    <property name="ts.external.directory.path" value="C:\Users\anton\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\202.7319.49\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Backyard\fork\sss\obmenka-back\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Backyard\fork\exchange\exchange-website\src\assets" />
-      <recent name="C:\Backyard\fork\exchange\exchange-website\src\state\ducks\rateEdit" />
-      <recent name="C:\Backyard\fork\exchange\exchange-website" />
-      <recent name="C:\Backyard\fork\exchange\exchange-website\src\state\ducks\rate" />
-      <recent name="C:\Backyard\fork\exchange\exchange-backend\src\graphql\entities" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Backyard\fork\exchange\exchange-website\src\assets" />
       <recent name="C:\Backyard\fork\exchange\exchange-website\src\routes\sets" />
       <recent name="C:\Backyard\fork\exchange\exchange-website\src\routes\orders\details" />
       <recent name="C:\Backyard\fork\exchange\exchange-website\src\routes\orders" />
       <recent name="C:\Backyard\fork\exchange\exchange-website\src\assets\scss" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Backyard\fork\sss\obmenka-back\src\managers\rate" />
+      <recent name="C:\Backyard\fork\exchange\exchange-website\src\assets" />
+      <recent name="C:\Backyard\fork\exchange\exchange-website\src\state\ducks\rateEdit" />
+      <recent name="C:\Backyard\fork\exchange\exchange-website" />
+      <recent name="C:\Backyard\fork\exchange\exchange-website\src\state\ducks\rate" />
     </key>
   </component>
   <component name="RunManager">
@@ -115,6 +292,12 @@
       <workItem from="1605453428749" duration="2397000" />
       <workItem from="1605519674536" duration="80000" />
       <workItem from="1605567006651" duration="11000" />
+      <workItem from="1607272358685" duration="3452000" />
+      <workItem from="1607858275704" duration="1560000" />
+      <workItem from="1607860749227" duration="763000" />
+      <workItem from="1607861767260" duration="503000" />
+      <workItem from="1607863997336" duration="7316000" />
+      <workItem from="1607885581526" duration="2366000" />
     </task>
     <task id="LOCAL-00001" summary="initialize">
       <created>1598961730817</created>
@@ -164,6 +347,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -190,22 +383,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="824" y="419" key="#ESLint/0.0.1920.1080@0.0.1920.1080" timestamp="1605385553913" />
-    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598966819666">
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607858478519">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598966819666" />
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607858478519" />
     <state x="718" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604853255714">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="718" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1604853255714" />
-    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605372778887">
+    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607272806139">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605372778887" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1605567016434">
+    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607272806139" />
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1607864413672">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605567016434" />
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607864413672" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1607858613179">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1607858613179" />
     <state width="1877" height="288" key="GridCell.Tab.0.bottom" timestamp="1605397913800">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -222,30 +419,25 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="288" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1605397913800" />
-    <state x="461" y="185" key="SettingsEditor" timestamp="1598975270805">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1598975270805" />
     <state x="552" y="269" key="Vcs.Push.Dialog.v2" timestamp="1605456377039">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1605456377039" />
-    <state x="782" y="363" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1598971932431">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="782" y="363" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1080@0.0.1920.1080" timestamp="1598971932431" />
     <state x="787" y="226" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605125401362">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="787" y="226" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605125401362" />
-    <state x="640" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604142169968">
+    <state x="640" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607860350746">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="640" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1604142169967" />
-    <state x="668" y="257" width="583" height="566" key="find.popup" timestamp="1605378407007">
+    <state x="640" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607860350746" />
+    <state x="668" y="257" width="583" height="566" key="find.popup" timestamp="1607887524853">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="668" y="257" width="583" height="590" key="find.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1598976420240" />
-    <state x="668" y="257" width="583" height="566" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605378407007" />
+    <state x="668" y="257" width="583" height="566" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1607887524853" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1607886588559">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1607886588559" />
   </component>
 </project>

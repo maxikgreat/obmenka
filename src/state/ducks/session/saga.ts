@@ -1,7 +1,5 @@
 import {all, put, takeEvery} from 'redux-saga/effects';
-import {SpoonAndForkApi as Api, SpoonAndForkApi} from 'api';
-import {Action} from 'redux-actions';
-import actions from './actions';
+import {SpoonAndForkApi} from 'api';
 import {Account} from 'entities/Account';
 import types from './types';
 import {actions as alertActions} from '../alert';
@@ -13,20 +11,6 @@ function* updateMyAccount() {
     // yield put(actions.updateUserProfileCompleted(account));
     // yield put(routerActions.goBack(payload));
     yield put(alertActions.showSnackbar({title: 'Profile saved!!'}));
-  } catch (e) {
-    yield put(alertActions.showError(e));
-  }
-}
-
-function* updateProfileImage({payload}: Action<File | string | undefined>) {
-  try {
-    if (payload && typeof payload !== 'string') {
-      const imageId: string = yield Api.uploadFile(payload);
-      yield SpoonAndForkApi.updateUserProfileImage(imageId);
-      yield put(actions.updateProfileImageCompleted(imageId));
-      yield put(sessionActions.fetchSession());
-      yield put(sessionActions.setSessionExists(true));
-    }
   } catch (e) {
     yield put(alertActions.showError(e));
   }
@@ -44,6 +28,5 @@ function* fetchSession() {
 
 export default function* () {
   yield all([takeEvery(types.UPDATE_USER_PROFILE, updateMyAccount)]);
-  yield all([takeEvery(types.UPDATE_PROFILE_IMAGE, updateProfileImage)]);
   yield all([takeEvery(types.FETCH_SESSION, fetchSession)]);
 }

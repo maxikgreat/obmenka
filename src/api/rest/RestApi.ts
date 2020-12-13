@@ -6,6 +6,9 @@ import RefreshRequest from 'api/entities/RefreshRequest';
 import ForgotPasswordRequest from 'api/entities/ForgotPasswordRequest';
 import {ChangePasswordRequest} from 'api/entities/ChangePasswordRequest';
 import UpdateFirebaseTokenRequest from 'api/entities/UpdateFirebaseTokenRequest';
+import UpdateRateRequest from '../entities/UpdateRateRequest';
+import Rate from '../../entities/Rate';
+import {Account} from '../../entities/Account';
 
 export default class RestApi extends ApiBase {
   public async register(request: RegisterRequest) {
@@ -32,7 +35,23 @@ export default class RestApi extends ApiBase {
     return this.put<void>('auth/password', request);
   }
 
+  public async myAccount() {
+    return this.get<Account>('auth/session');
+  }
+
   public async updateFirebaseToken(request: UpdateFirebaseTokenRequest) {
     return this.post<void>('auth/firebaseToken', request);
+  }
+
+  public async rateById(request: UpdateFirebaseTokenRequest) {
+    return this.post<void>('rate/rateById', request);
+  }
+
+  public async rates() {
+    return this.get<Rate[]>('rate/getRates');
+  }
+
+  public async updateRate(request: UpdateRateRequest) {
+    return this.put<void>('rate/updateRate', request);
   }
 }
