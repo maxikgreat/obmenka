@@ -27,7 +27,7 @@ function* accountEntered() {
 }
 
 function navigateToAuth({payload}: Action<NavigationPayload>) {
-  payload.history.push('/main');
+  payload.history.push('/auth');
 }
 
 function navigateToMain({payload}: Action<NavigationPayload>) {

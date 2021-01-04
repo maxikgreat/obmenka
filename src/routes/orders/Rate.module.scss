@@ -8,6 +8,18 @@
   width: 100%;
   padding: 70px;
   background: #F2F2F2;
+
+  .burger {
+    display: none;
+  }
+
+  .change__view {
+    display: none;
+  }
+
+  .login__user {
+    display: none;
+  }
 }
 .toggle__container {
   width: 100%;
@@ -114,6 +126,79 @@
     }
   }
 
+  .rate__container__multi {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & .rate__card {
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 24px 0 0;
+      margin-right: 30px;
+      margin-bottom: 60px;
+
+      & :last-child {
+        margin-right: 0;
+      }
+
+      & .rate__name {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #9191AF;
+        padding: 0 24px;
+      }
+
+      & .rate__inner {
+        padding: 10px 24px;
+        display: flex;
+
+        & div {
+          display: flex;
+          flex-direction: column;
+        }
+
+        & div:first-child {
+          display: flex;
+          flex-direction: column;
+          margin-right: 50px;
+        }
+
+        & .rate__price {
+          font-family: 'Lato', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 30px;
+          color: #212145;
+        }
+
+        & .rate__price__title {
+          font-family: 'Lato', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 11px;
+          text-transform: uppercase;
+          color: #9191AF;
+        }
+      }
+
+      & .rate__footer {
+        margin-bottom: -5px;
+        //width: 314px;
+        //height: 54px;
+      }
+
+      &:nth-child(3) img {
+        height: 63px;
+        width: 314px;
+        margin-bottom: -14px;
+      }
+    }
+  }
+
   .footer__container {
     display: flex;
     justify-content: center;
@@ -148,6 +233,142 @@
         font-size: 20px;
         line-height: 24px;
         color: #9191AF;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .container {
+    padding: 25px;
+
+    .burger {
+      display: block;
+      position: absolute;
+      top: 20px;
+    }
+
+    .change__view {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 60px;
+    }
+
+    .login__user {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  .toggle__container {
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .rate__inner {
+    .rate__container {
+      flex-direction: column;
+      padding-top: 25px;
+    }
+
+    & .rate__card {
+      margin-right: 0!important;
+      margin-bottom: 15px!important;
+      max-width: 365px;
+      height: 160px;
+      padding: 15px 0 0!important;
+
+      & .rate__footer {
+        margin-top: 5px;
+        width: 100%;
+      }
+
+      &:nth-child(3) img {
+        height: 70px!important;
+        width: 100%!important;
+      }
+    }
+  }
+
+  .rate__container__multi {
+    flex-direction: row;
+    padding-top: 25px!important;
+
+    & .rate__card {
+      max-width: 160px;
+      height: 108px;
+      padding: 5px 0 0 !important;
+
+      &:nth-child(2n+1) {
+        margin-right: 10px!important;
+      }
+
+      &:nth-child(2) img {
+        margin-top: 2px!important;
+      }
+
+      &:nth-child(3) img {
+        height: 30px!important;
+        width: 100%!important;
+      }
+
+      &:nth-child(4) img {
+        margin-top: 2px!important;
+      }
+
+      &:nth-child(5) img {
+        margin-top: 1px!important;
+      }
+
+      &:nth-child(6) img {
+        margin-top: 2px!important;
+      }
+
+      & .rate__inner {
+        padding: 10px 10px 3px!important;
+
+        & div:first-child {
+          margin-right: 10px!important;
+        }
+
+        & .rate__price {
+          font-family: 'Lato', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px!important;
+          color: #212145;
+        }
+      }
+
+      & .rate__name {
+        font-size: 13px!important;
+        padding: 0 10px!important;
+      }
+    }
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+
+    .footer__block {
+      width: 330px;
+
+      &:first-child {
+        margin-right: 0!important;
+        margin-bottom: 40px;
+      }
+
+      .footer__title {
+        justify-content: center;
+      }
+
+      .footer__description {
+        text-align: center;
       }
     }
   }

@@ -5,9 +5,10 @@ import {useRateActions, useSessionsActions} from '../../state/hooks/UseActions';
 import {useSelector} from '../../state/hooks';
 import RateEntity from 'entities/Rate';
 import RateEdit from './details/RateEdit';
+import {useHistory} from 'react-router-dom';
 
 const Rate: React.FC = () => {
-  // const history = useHistory();
+  const history = useHistory();
   const rateList = useSelector((state) => state.rates);
   const user = useSelector((state) => state.session);
 
@@ -24,6 +25,8 @@ const Rate: React.FC = () => {
   const [optRate, setOptRate] = useState<RateEntity[]>([]);
 
   const [isEditing, setEdit] = useState<boolean>(false);
+
+  const [singleView, setSingleView] = useState<boolean>(true);
 
   const rateActions = useRateActions();
   const sessionActions = useSessionsActions();
@@ -153,6 +156,85 @@ const Rate: React.FC = () => {
 
   return (
     <div className={styles.container}>
+      <svg
+        className={styles.burger}
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 7.5H25"
+          stroke="#9191AF"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M5 15H17.5"
+          stroke="#9191AF"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M5 22.5H22.5"
+          stroke="#9191AF"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+      <svg
+        className={styles.change__view}
+        onClick={() => setSingleView(!singleView)}
+        width="27"
+        height="27"
+        viewBox="0 0 27 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 23.6099V17.3599H8.25M2 12.3599C2.28011 9.61002 3.56283 7.05946 5.60342 5.19491C7.644 3.33035 10.2996 2.2823 13.0636 2.25073C15.8276 2.21916 18.5064 3.20628 20.5891 5.02374C22.6717 6.8412 24.0124 9.3618 24.3552 12.1046C24.6981 14.8474 24.0191 17.6205 22.4479 19.8947C20.8768 22.1688 18.5233 23.785 15.8366 24.4348C13.1499 25.0845 10.318 24.7224 7.88125 23.4175C5.44448 22.1126 3.5734 19.9563 2.625 17.3599L2 12.3599Z"
+          stroke="#9191AF"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+      <svg
+        className={styles.login__user}
+        onClick={() => history.push('/auth')}
+        width="28"
+        height="27"
+        viewBox="0 0 28 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M9.25 12C12.0114 12 14.25 9.76142 14.25 7C14.25 4.23858 12.0114 2 9.25 2C6.48858 2 4.25 4.23858 4.25 7C4.25 9.76142 6.48858 12 9.25 12Z"
+          stroke="#9191AF"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M1.75 24.5V22C1.75 20.6739 2.27678 19.4021 3.21447 18.4645C4.15215 17.5268 5.42392 17 6.75 17H11.75C13.0761 17 14.3479 17.5268 15.2855 18.4645C16.2232 19.4021 16.75 20.6739 16.75 22V24.5"
+          stroke="#9191AF"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M21.75 8.25V15.75M18 12H25.5H18Z"
+          stroke="#9191AF"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+
       <div className={styles.toggle__container}>
         <button
           type="button"
@@ -164,7 +246,9 @@ const Rate: React.FC = () => {
         </button>
       </div>
       <div className={styles.rate__inner}>
-        <div className={styles.rate__container}>
+        <div
+          className={singleView ? styles.rate__container : styles.rate__container__multi}
+        >
           {isEditing
             ? (!optValue ? rates : optRates).map((rate, index) => {
                 return <RateEdit rate={rate} key={rate.id ? rate.id : index} />;
@@ -219,10 +303,10 @@ const Rate: React.FC = () => {
               </svg>
               <span>Выгодный курс</span>
             </div>
-            <span className={styles.footer__description}>
+            <div className={styles.footer__description}>
               Самый выгодный и актуальный курс обмена валют в Харькове и Харьковской
               области
-            </span>
+            </div>
           </div>
           <div className={styles.footer__block}>
             <div className={styles.footer__title}>
@@ -266,10 +350,10 @@ const Rate: React.FC = () => {
               </svg>
               <span>Скидки</span>
             </div>
-            <span className={styles.footer__description}>
+            <div className={styles.footer__description}>
               Для постоянных клиентов действуют особые правила обмена и акционные
               программы
-            </span>
+            </div>
           </div>
         </div>
       </div>
