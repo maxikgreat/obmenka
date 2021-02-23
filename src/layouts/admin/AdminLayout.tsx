@@ -52,7 +52,7 @@ const useStyles = makeStyles(() =>
     drawerPaper: {
       width: drawerWidth,
       position: 'relative',
-      background: '#DCE1EE',
+      background: '#EEEEEE',
       border: 'none',
     },
     selected: {
